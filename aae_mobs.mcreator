@@ -321,8 +321,8 @@
   "language_map": {
     "en_us": {
       "item.aae_mobs.engie_spawn_egg": "Engie Spawn Egg",
-      "entity.aae_mobs.helper": "Helper",
       "item.aae_mobs.enraged_engie_spawn_egg": "Enraged Engie Spawn Egg",
+      "entity.aae_mobs.helper": "Helper",
       "entity.aae_mobs.enraged_engie": "Enraged Engie",
       "entity.aae_mobs.creator": "Creator",
       "itemGroup.tabmobs": "AAE Mobs",
@@ -357,7 +357,7 @@
     "description": "Made with MCreator",
     "author": "EngieGames",
     "websiteURL": "https://www.twitch.tv/engiegames",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "aae_mobs_logo",
