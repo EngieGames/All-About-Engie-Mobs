@@ -1,0 +1,7 @@
+{
+  "parent": "aae_mobs:custom/bloody_goggles",
+  "textures": {
+    "0": "aae_mobs:blocks/bloody_goggles_tex",
+    "particle": "aae_mobs:items/bloodgoggles"
+  }
+}

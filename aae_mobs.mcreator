@@ -1,0 +1,374 @@
+{
+  "mod_elements": [
+    {
+      "name": "Mobs",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mobs",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Engie",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aae_mobs/models/item/engie_spawn_egg.json",
+          "src/main/java/net/mcreator/aaemobs/entity/EngieEntity.java",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/EngieRenderer.java",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/engie_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "MadEngie",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mad_engie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/entity/MadEngieEntity.java",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/mad_engie_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/MadEngieRenderer.java",
+          "src/main/resources/assets/aae_mobs/models/item/mad_engie_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "AngryEngie",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angry_engie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aae_mobs/models/item/angry_engie_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/angry_engie_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/AngryEngieRenderer.java",
+          "src/main/java/net/mcreator/aaemobs/entity/AngryEngieEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Creator",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/client/renderer/CreatorRenderer.java",
+          "src/main/java/net/mcreator/aaemobs/entity/CreatorEntity.java",
+          "src/main/resources/assets/aae_mobs/models/item/creator_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/creator_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "AngryCreator",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angry_creator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/entity/AngryCreatorEntity.java",
+          "src/main/resources/assets/aae_mobs/models/item/angry_creator_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/angry_creator_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/AngryCreatorRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "CreatorEntityDies",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creator_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/CreatorEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Engie2",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engie_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/entity/Engie2Entity.java",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/engie_2_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/Engie2Renderer.java",
+          "src/main/resources/assets/aae_mobs/models/item/engie_2_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Punisher",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "punisher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aae_mobs/models/item/punisher_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/punisher_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/entity/PunisherEntity.java",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/PunisherRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "AngryEngieEntityDies",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angry_engie_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/AngryEngieEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Helper",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aae_mobs/models/item/helper_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/helper_biome_modifier.json",
+          "src/main/java/net/mcreator/aaemobs/client/renderer/HelperRenderer.java",
+          "src/main/java/net/mcreator/aaemobs/entity/HelperEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BloodyGogglesPunisher",
+      "type": "tool",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloody_goggles_punisher",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/aae_mobs/models/item/bloody_goggles_punisher.json",
+          "src/main/java/net/mcreator/aaemobs/item/BloodyGogglesPunisherItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EngieGamesHimself",
+      "type": "livingentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engie_games_himself",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/client/renderer/EngieGamesHimselfRenderer.java",
+          "src/main/java/net/mcreator/aaemobs/entity/EngieGamesHimselfEntity.java",
+          "src/main/resources/assets/aae_mobs/models/item/engie_games_himself_spawn_egg.json",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/engie_games_himself_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "EngieGamesHimselfRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engie_games_himself_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/EngieGamesHimselfRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EnragedEngie",
+      "type": "livingentity",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enraged_engie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/client/renderer/EnragedEngieRenderer.java",
+          "src/main/java/net/mcreator/aaemobs/entity/EnragedEngieEntity.java",
+          "src/main/resources/data/aae_mobs/forge/biome_modifier/enraged_engie_biome_modifier.json",
+          "src/main/resources/assets/aae_mobs/models/item/enraged_engie_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "EnragedEngieEntityDies",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enraged_engie_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/EnragedEngieEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HelperThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helper_this_entity_kills_another_one",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/HelperThisEntityKillsAnotherOneProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Distorted_Target",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "summon",
+      "files": [
+        "summon"
+      ],
+      "category": "neutral",
+      "subtitle": "Bye Bye."
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.aae_mobs.engie_spawn_egg": "Engie Spawn Egg",
+      "entity.aae_mobs.helper": "Helper",
+      "item.aae_mobs.enraged_engie_spawn_egg": "Enraged Engie Spawn Egg",
+      "entity.aae_mobs.enraged_engie": "Enraged Engie",
+      "entity.aae_mobs.creator": "Creator",
+      "itemGroup.tabmobs": "AAE Mobs",
+      "entity.aae_mobs.engie_games_himself": "Dev Engie Himself.",
+      "item.aae_mobs.creator_spawn_egg": "Creator Spawn Egg",
+      "item.aae_mobs.punisher_spawn_egg": "Punisher Spawn Egg",
+      "item.aae_mobs.mad_engie_spawn_egg": "Mad Engie Spawn Egg",
+      "item.aae_mobs.angry_engie_spawn_egg": "Angry Engie Spawn Egg",
+      "entity.aae_mobs.angry_creator": "Angry Creator",
+      "item.aae_mobs.engie_2_spawn_egg": "Engie Spawn Egg",
+      "item.aae_mobs.bloody_goggles_punisher": "Bloody Goggles Punisher",
+      "entity.aae_mobs.engie": "Engie",
+      "item.aae_mobs.helper_spawn_egg": "Helper Spawn Egg",
+      "subtitles.summon": "Bye Bye.",
+      "entity.aae_mobs.engie_2": "Engie",
+      "item.aae_mobs.angry_creator_spawn_egg": "Angry Creator Spawn Egg",
+      "entity.aae_mobs.angry_engie": "Angry Engie",
+      "entity.aae_mobs.mad_engie": "Mad Engie",
+      "entity.aae_mobs.punisher": "Punisher",
+      "subtitles.desound": "Distorted Spotted",
+      "item.aae_mobs.engie_games_himself_spawn_egg": "Dev Engie Himself. Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "aae_mobs",
+    "modName": "AAE Mobs",
+    "version": "10.16.24",
+    "description": "Made with MCreator",
+    "author": "EngieGames",
+    "websiteURL": "https://www.twitch.tv/engiegames",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "aae_mobs_logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Find the book.",
+    "modElementsPackage": "net.mcreator.aaemobs",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "AAE Mobs",
+    "icon": {
+      "value": "Blocks.MOB_SPAWNER"
+    },
+    "showSearch": false
+  }
+}

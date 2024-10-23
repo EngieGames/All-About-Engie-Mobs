@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bloody_goggles_tex"
+      },
+      "name": "default"
+    }
+  }
+}

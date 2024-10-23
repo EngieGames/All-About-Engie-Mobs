@@ -1,0 +1,11 @@
+{
+  "summon": {
+    "subtitle": "subtitles.summon",
+    "sounds": [
+      {
+        "name": "aae_mobs:summon",
+        "stream": false
+      }
+    ]
+  }
+}
