@@ -357,7 +357,7 @@
     "description": "Made with MCreator",
     "author": "EngieGames",
     "websiteURL": "https://www.twitch.tv/engiegames",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "aae_mobs_logo",
