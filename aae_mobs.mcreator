@@ -298,6 +298,48 @@
           }
         ]
       }
+    },
+    {
+      "name": "ModeCheck",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mode_check",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/ModeCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorldLoad",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_load",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/aaemobs/procedures/WorldLoadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -321,8 +363,8 @@
   "language_map": {
     "en_us": {
       "item.aae_mobs.engie_spawn_egg": "Engie Spawn Egg",
-      "entity.aae_mobs.helper": "Helper",
       "item.aae_mobs.enraged_engie_spawn_egg": "Enraged Engie Spawn Egg",
+      "entity.aae_mobs.helper": "Helper",
       "entity.aae_mobs.enraged_engie": "Enraged Engie",
       "entity.aae_mobs.creator": "Creator",
       "itemGroup.tabmobs": "AAE Mobs",
@@ -353,7 +395,7 @@
   "workspaceSettings": {
     "modid": "aae_mobs",
     "modName": "AAE Mobs",
-    "version": "10.16.24",
+    "version": "12.1.24.2",
     "description": "Made with MCreator",
     "author": "EngieGames",
     "websiteURL": "https://www.twitch.tv/engiegames",
