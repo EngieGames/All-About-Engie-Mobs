@@ -337,6 +337,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -344,9 +348,9 @@
   ],
   "variable_elements": [
     {
-      "name": "Distorted_Target",
+      "name": "firstplay",
       "type": "logic",
-      "scope": "player_persistent",
+      "scope": "player_lifetime",
       "value": "false"
     }
   ],
@@ -395,7 +399,7 @@
   "workspaceSettings": {
     "modid": "aae_mobs",
     "modName": "AAE Mobs",
-    "version": "12.1.24.2",
+    "version": "12.18.24",
     "description": "Made with MCreator",
     "author": "EngieGames",
     "websiteURL": "https://www.twitch.tv/engiegames",

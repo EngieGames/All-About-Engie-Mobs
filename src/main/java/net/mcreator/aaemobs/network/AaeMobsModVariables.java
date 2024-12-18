@@ -66,8 +66,8 @@ public class AaeMobsModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.Distorted_Target = original.Distorted_Target;
 			if (!event.isWasDeath()) {
+				clone.firstplay = original.firstplay;
 			}
 		}
 	}
@@ -103,7 +103,7 @@ public class AaeMobsModVariables {
 	}
 
 	public static class PlayerVariables {
-		public boolean Distorted_Target = false;
+		public boolean firstplay = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -112,13 +112,13 @@ public class AaeMobsModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putBoolean("Distorted_Target", Distorted_Target);
+			nbt.putBoolean("firstplay", firstplay);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			Distorted_Target = nbt.getBoolean("Distorted_Target");
+			firstplay = nbt.getBoolean("firstplay");
 		}
 	}
 
@@ -143,7 +143,7 @@ public class AaeMobsModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.Distorted_Target = message.data.Distorted_Target;
+					variables.firstplay = message.data.firstplay;
 				}
 			});
 			context.setPacketHandled(true);
