@@ -20,8 +20,8 @@ public class AaeMobsModItems {
 	public static final RegistryObject<Item> ENGIE_SPAWN_EGG = REGISTRY.register("engie_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.ENGIE, -52429, -154, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
 	public static final RegistryObject<Item> ANGRY_ENGIE_SPAWN_EGG = REGISTRY.register("angry_engie_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.ANGRY_ENGIE, -16777216, -3355444, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
 	public static final RegistryObject<Item> CREATOR_SPAWN_EGG = REGISTRY.register("creator_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.CREATOR, -6723841, -154, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
-	public static final RegistryObject<Item> ANGRY_CREATOR_SPAWN_EGG = REGISTRY.register("angry_creator_spawn_egg",
-			() -> new ForgeSpawnEggItem(AaeMobsModEntities.ANGRY_CREATOR, -16777216, -6723841, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
+	public static final RegistryObject<Item> OUTRAGED_ENGIE_SPAWN_EGG = REGISTRY.register("outraged_engie_spawn_egg",
+			() -> new ForgeSpawnEggItem(AaeMobsModEntities.OUTRAGED_ENGIE, -16777216, -9502465, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
 	public static final RegistryObject<Item> ENGIE_2_SPAWN_EGG = REGISTRY.register("engie_2_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.ENGIE_2, -13421773, -3355444, new Item.Properties().tab(AaeMobsModTabs.TAB_MOBS)));
 	public static final RegistryObject<Item> PUNISHER_SPAWN_EGG = REGISTRY.register("punisher_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.PUNISHER, -16777216, -6015354, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> HELPER_SPAWN_EGG = REGISTRY.register("helper_spawn_egg", () -> new ForgeSpawnEggItem(AaeMobsModEntities.HELPER, -16777216, -6015354, new Item.Properties().tab(null)));

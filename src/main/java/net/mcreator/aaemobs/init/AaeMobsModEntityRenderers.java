@@ -28,7 +28,7 @@ public class AaeMobsModEntityRenderers {
 		event.registerEntityRenderer(AaeMobsModEntities.ENGIE.get(), EngieRenderer::new);
 		event.registerEntityRenderer(AaeMobsModEntities.ANGRY_ENGIE.get(), AngryEngieRenderer::new);
 		event.registerEntityRenderer(AaeMobsModEntities.CREATOR.get(), CreatorRenderer::new);
-		event.registerEntityRenderer(AaeMobsModEntities.ANGRY_CREATOR.get(), AngryCreatorRenderer::new);
+		event.registerEntityRenderer(AaeMobsModEntities.OUTRAGED_ENGIE.get(), AngryCreatorRenderer::new);
 		event.registerEntityRenderer(AaeMobsModEntities.ENGIE_2.get(), Engie2Renderer::new);
 		event.registerEntityRenderer(AaeMobsModEntities.PUNISHER.get(), PunisherRenderer::new);
 		event.registerEntityRenderer(AaeMobsModEntities.HELPER.get(), HelperRenderer::new);

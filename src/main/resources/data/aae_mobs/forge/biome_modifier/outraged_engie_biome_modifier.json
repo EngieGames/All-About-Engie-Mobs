@@ -4,8 +4,8 @@
     "type": "forge:any"
   },
   "spawners": {
-    "type": "aae_mobs:angry_creator",
-    "weight": 20,
+    "type": "aae_mobs:outraged_engie",
+    "weight": 5,
     "minCount": 4,
     "maxCount": 4
   }

@@ -4,9 +4,9 @@ license="MIT License"
 
 [[mods]]
 modId="aae_mobs"
-version="12.18.24"
+version="12.24.24"
 displayName="AAE Mobs"
-credits="Find the book."
+credits="mhm"
 displayURL="https://www.twitch.tv/engiegames"
 logoFile="logo.png"
 authors="EngieGames"

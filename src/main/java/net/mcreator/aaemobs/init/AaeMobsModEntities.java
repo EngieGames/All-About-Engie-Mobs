@@ -34,23 +34,23 @@ public class AaeMobsModEntities {
 	public static final RegistryObject<EntityType<MadEngieEntity>> MAD_ENGIE = register("mad_engie",
 			EntityType.Builder.<MadEngieEntity>of(MadEngieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MadEngieEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<EngieEntity>> ENGIE = register("engie",
 			EntityType.Builder.<EngieEntity>of(EngieEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EngieEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<AngryEngieEntity>> ANGRY_ENGIE = register("angry_engie",
 			EntityType.Builder.<AngryEngieEntity>of(AngryEngieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AngryEngieEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<CreatorEntity>> CREATOR = register("creator",
 			EntityType.Builder.<CreatorEntity>of(CreatorEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CreatorEntity::new)
 
 					.sized(0.6f, 2f));
-	public static final RegistryObject<EntityType<AngryCreatorEntity>> ANGRY_CREATOR = register("angry_creator",
+	public static final RegistryObject<EntityType<AngryCreatorEntity>> OUTRAGED_ENGIE = register("outraged_engie",
 			EntityType.Builder.<AngryCreatorEntity>of(AngryCreatorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AngryCreatorEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(0.6f, 1.95f));
 	public static final RegistryObject<EntityType<Engie2Entity>> ENGIE_2 = register("engie_2",
 			EntityType.Builder.<Engie2Entity>of(Engie2Entity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(Engie2Entity::new)
 
@@ -66,7 +66,7 @@ public class AaeMobsModEntities {
 	public static final RegistryObject<EntityType<EnragedEngieEntity>> ENRAGED_ENGIE = register("enraged_engie",
 			EntityType.Builder.<EnragedEngieEntity>of(EnragedEngieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnragedEngieEntity::new)
 
-					.sized(0.6f, 2f));
+					.sized(0.6f, 1.95f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -94,7 +94,7 @@ public class AaeMobsModEntities {
 		event.put(ENGIE.get(), EngieEntity.createAttributes().build());
 		event.put(ANGRY_ENGIE.get(), AngryEngieEntity.createAttributes().build());
 		event.put(CREATOR.get(), CreatorEntity.createAttributes().build());
-		event.put(ANGRY_CREATOR.get(), AngryCreatorEntity.createAttributes().build());
+		event.put(OUTRAGED_ENGIE.get(), AngryCreatorEntity.createAttributes().build());
 		event.put(ENGIE_2.get(), Engie2Entity.createAttributes().build());
 		event.put(PUNISHER.get(), PunisherEntity.createAttributes().build());
 		event.put(HELPER.get(), HelperEntity.createAttributes().build());

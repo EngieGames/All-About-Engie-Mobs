@@ -4,14 +4,14 @@
   "definition": {
     "mobName": "Angry Creator",
     "mobLabel": "",
-    "mobModelName": "Biped",
-    "mobModelTexture": "angrycreator.png",
-    "mobModelGlowTexture": "",
+    "mobModelName": "Modeloutraged_new",
+    "mobModelTexture": "outragednew.png",
+    "mobModelGlowTexture": "outragednew_g.png",
     "solidBoundingBox": {
       "fixedValue": false
     },
     "modelWidth": 0.6,
-    "modelHeight": 2.0,
+    "modelHeight": 1.95,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -20,7 +20,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -6723841,
+      "value": -9502465,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -114,7 +114,7 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
+    "spawningProbability": 5,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,

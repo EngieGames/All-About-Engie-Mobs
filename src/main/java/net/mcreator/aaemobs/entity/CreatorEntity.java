@@ -26,7 +26,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.aaemobs.procedures.CreatorEntityDiesProcedure;
 import net.mcreator.aaemobs.init.AaeMobsModEntities;
 
 public class CreatorEntity extends Monster {
@@ -85,12 +84,6 @@ public class CreatorEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-	}
-
-	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		CreatorEntityDiesProcedure.execute(this);
 	}
 
 	public static void init() {
